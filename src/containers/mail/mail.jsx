@@ -6,7 +6,8 @@ import { BiMailSend } from "react-icons/bi";
 
 const Mail = () => {
   const logout = useUserState((state) => state.logOut);
-  // const user = useUserState((state) => state.user.data.username);
+  const user = useUserState((state) => state.user.user.username);
+  // console.log(user);
 
   return (
     <div className="mail">
@@ -46,7 +47,7 @@ const Mail = () => {
       <section>
         <div id="mails-head">
           <div className="greet">
-            <h1>Hello , welcome to your MiMail dashboard.</h1>
+            <h1>Hello {user}, welcome to your MiMail dashboard.</h1>
             <button onClick={() => logout()}>Logout</button>
           </div>
           <hr id="hr" />

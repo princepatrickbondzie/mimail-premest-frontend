@@ -22,8 +22,8 @@ function App() {
             <Route path="sent" element={<Sent />}></Route>
             <Route path="draft" element={<Draft />}></Route>
             <Route path="spam" element={<Spam />}></Route>
-            <Route path=":inboxId" element={<InboxDetail />} />
-            <Route path=":sentId" element={<SentDetail />} />
+            <Route path="/:inboxId" element={<InboxDetail />} />
+            <Route path="/:sentId" element={<SentDetail />} />
           </Route>
         </Route>
         <Route path="signin" element={<Signin />} />

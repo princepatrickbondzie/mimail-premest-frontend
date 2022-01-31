@@ -1,10 +1,10 @@
 import React from "react";
 import { useUserState } from "../../../state/store";
-import { Link } from "react-router-dom";
+import SentCard from "./sentCard";
 import "../index.css";
 
 const Sent = () => {
-  const sentMail = useUserState((state) => state.user.data.sent);
+  const sentMail = useUserState((state) => state.user.user.sent);
   console.log(sentMail);
 
   return (
@@ -13,20 +13,8 @@ const Sent = () => {
         <h1 style={{ textAlign: "center" }}>No sent mails...</h1>
       ) : (
         <div>
-          {sentMail.map((sent) => (
-            <Link to={`/${sent._id}`}>
-              <section id="inbox-tab">
-                <h4 style={{ width: "20vw" }}>{sent.title}</h4>
-                <p
-                  style={{
-                    width: "57vw",
-                    paddingLeft: "10px",
-                  }}
-                >
-                  {sent.body}
-                </p>
-              </section>
-            </Link>
+          {sentMail.map((sent, idx) => (
+            <SentCard key={idx} sent={sent} />
           ))}
         </div>
       )}

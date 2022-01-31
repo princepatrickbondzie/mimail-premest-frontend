@@ -159,3 +159,29 @@ div > a {
   margin-top: 15px;
   cursor: pointer;
 }
+
+/* Inbox detail */
+.card-detail {
+  padding: 20px;
+  margin-top: 2rem;
+}
+.detail-main,
+.detail-header {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.detail-main {
+  width: 76vw;
+  min-height: 78vh;
+  box-shadow: 1px 1px 5px 1px rgb(170, 170, 170);
+  margin: 0 auto;
+}
+.detail-header {
+  height: 3rem;
+  background-color: darkred;
+}
+.display-detail {
+  padding: 20px;
+  color: rgb(65, 64, 64);
+}

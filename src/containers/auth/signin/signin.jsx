@@ -31,12 +31,11 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { user } = await fetchQuery({
-      uri: "http://localhost:9000/api/login",
+      uri: "https://rose-dull-hen.cyclic.app/api/login",
       method: "POST",
       body: { ...state },
     });
     setUser({ user });
-    
     navigate("/");
   };
 
