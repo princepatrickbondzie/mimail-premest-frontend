@@ -1,0 +1,161 @@
+.mail {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+aside {
+  width: 14vw;
+  height: 100vh;
+  box-shadow: 0.5px 0.5px 5px 1px rgb(196, 196, 196);
+  background-color: darkred;
+  color: white;
+  padding: 20px 0 0 20px;
+}
+.tab-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+#write {
+  box-shadow: 1px 1px 6px 0.5px rgb(58, 58, 58);
+  width: 12vw;
+  height: 1.5rem;
+  border-radius: 70px;
+  background-color: white;
+  color: darkred;
+  padding: 6px 0 10px 20px;
+  margin-left: -7px;
+  text-decoration: none;
+}
+#li {
+  height: 2.5rem;
+  width: 12vw;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+#li:focus,
+#li:hover {
+  border: 2px solid white;
+  height: 1.5rem;
+  width: 12vw;
+  border-radius: 70px;
+  padding: 6px 0 10px 20px;
+  margin-left: -7px;
+  box-shadow: 1px 1px 6px 0.5px rgb(37, 37, 37);
+  border-radius: 70px;
+}
+section {
+  width: 86vw;
+  padding: 15px;
+}
+
+/* Compose */
+.compose {
+  height: 68vh;
+  align-items: center;
+}
+.compose-tab {
+  height: 60vh;
+  width: 45vw;
+  margin: 8rem 0 0 15rem;
+  box-shadow: 1px 1px 5px 0.5px rgb(172, 172, 172);
+}
+.compose-tab,
+.tab {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tab {
+  background-color: darkred;
+}
+
+.compose-form > input {
+  height: 1rem;
+  width: 35vw;
+  border: none;
+  padding: 5px;
+  outline: none;
+  font-size: 16px;
+}
+textarea {
+  width: 42vw;
+  padding: 10px;
+  margin: 0 0 0 5px;
+  border: none;
+  outline: none;
+}
+
+.compose-btn {
+  margin: 10px 0 0 17vw;
+  height: 2.5rem;
+  width: 10vw;
+  border-radius: 10px;
+  border: none;
+  background-color: darkred;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Inbox */
+.inbox {
+  /* width: 100vw; */
+  padding: 20px;
+}
+#mails-head {
+  height: 3rem;
+  width: 79vw;
+  margin: 0 auto;
+}
+#hr {
+  border: none;
+  background-color: darkred;
+  height: 3px;
+}
+.inb {
+  padding: 20px 0 0 0;
+  margin-top: 2rem;
+}
+div > a {
+  color: black;
+  text-decoration: none;
+}
+#inbox-tab {
+  height: 2rem;
+  width: 77vw;
+  box-shadow: 0.6px 0.6px 2px 0.1px rgb(216, 216, 216);
+  padding: 7px;
+  margin: 2px 0 2px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#inbox-tab:hover {
+  box-shadow: 0.6px 0.6px 8px 0.1px rgb(204, 203, 203);
+}
+
+/* Greeting message */
+.greet {
+  display: flex;
+  justify-content: space-between;
+}
+.greet > button {
+  background-color: darkred;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 2.4rem;
+  width: 8rem;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
