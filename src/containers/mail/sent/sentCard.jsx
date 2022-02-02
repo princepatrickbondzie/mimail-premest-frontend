@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const SentCard = ({ sent }) => {
   return (
     <div>
-      <Link to={`/${sent._id}`}>
+      <Link to={`/view_${sent._id}`}>
         <section id="inbox-tab">
           <h4 style={{ width: "20vw" }}>{sent.title}</h4>
           <p

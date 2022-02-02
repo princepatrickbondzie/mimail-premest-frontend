@@ -4,7 +4,7 @@ import { useUserState } from "../state/store";
 const ProtectedRoute = ({ path, component: Component, ...rest }) => {
   const isLoggedIn = useUserState((state) => state.isLoggedIn);
   const location = useLocation();
-  console.log(isLoggedIn);
+  // console.log(isLoggedIn);
 
   return isLoggedIn ? (
     <Outlet />

@@ -5,7 +5,7 @@ import "../index.css";
 
 const Inbox = () => {
   const data = useUserState((state) => state.user.user.inbox);
-  console.log(data);
+  // console.log(data);
   
   return (
     <div className="inb">

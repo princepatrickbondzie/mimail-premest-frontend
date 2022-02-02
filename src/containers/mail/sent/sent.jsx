@@ -1,5 +1,6 @@
 import React from "react";
 import { useUserState } from "../../../state/store";
+import { Outlet } from "react-router-dom";
 import SentCard from "./sentCard";
 import "../index.css";
 
@@ -16,6 +17,7 @@ const Sent = () => {
           {sentMail.map((sent, idx) => (
             <SentCard key={idx} sent={sent} />
           ))}
+          <Outlet />
         </div>
       )}
     </div>
